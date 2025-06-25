@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="md:col-span-2">
         <div className="flex items-center gap-2 mb-6">
           <div className="w-8 h-8 bg-gradient-to-r from-cyan-400 to-white rounded-lg" />
-          <h3 className="text-2xl font-bold">MarcelPearl</h3>
+          <h3 className="text-2xl font-bold">V Graph</h3>
         </div>
         <p className="text-white/60 mb-6 max-w-md leading-relaxed">
           The professional no-code platform for building intelligent, 
@@ -35,7 +35,7 @@ const Footer = () => {
     </div>
     <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-6 text-white/60">
-        <p>&copy; {currentYear} MarcelPearl. All rights reserved.</p>
+        <p>&copy; {currentYear} V Graph. All rights reserved.</p>
         <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors">
         <p  className="hover:text-cyan-400 transition-colors">Privacy Policy</p>
         </Link>

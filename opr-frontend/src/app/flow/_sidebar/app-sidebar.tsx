@@ -48,7 +48,7 @@ export function AppSidebar() {
           <div className="flex items-center gap-2">
             <Link href="/">
               <span className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-cyan-300 bg-clip-text text-transparent">
-                MarcelPearl
+                V Graph
               </span>
             </Link>
           </div>

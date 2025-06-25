@@ -74,7 +74,7 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
   async function sendOTP(email: string) {
     const otp = generateOTP();
     localStorage.setItem("currentOtp", otp);
-    const message = `Your OTP is ${otp}. Thank You For Registering With MarcelPearl`;
+    const message = `Your OTP is ${otp}. Thank You For Registering With V Graph`;
 
     const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/v1/auth/otpVerification`, {
       email,

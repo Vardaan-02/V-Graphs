@@ -1,7 +1,6 @@
 import { ArrowLeft, ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { useState } from "react";
 import { FaCloud, FaCogs, FaJava } from "react-icons/fa";
-import { MdApi } from "react-icons/md";
 import { SiFastapi, SiLangchain } from "react-icons/si";
 import {
   SiDocker,
@@ -9,7 +8,6 @@ import {
   SiGraphql,
   SiNextdotjs,
   SiPostgresql,
-  SiSpringboot,
   SiTypescript,
 } from "react-icons/si";
 import Image from "next/image";
@@ -22,32 +20,12 @@ export default function Creator() {
 
   const creator = [
     {
-      name: "Saumya",
-      email: "saumyasood27@gmail.com",
-      linkdin: "https://www.linkedin.com/in/saumya-sood-875837332/",
-      github: "https://github.com/Marcella2706",
+      name: "Vardaan",
+      email: "vardaanpahwa02@gmail.com",
+      linkdin: "https://www.linkedin.com/in/vardaan-pahwa-6936a3319/",
+      github: "https://github.com/Vardaan-02",
       about:
-        "Full Stack Developer with expertise in both TypeScript and Java. Proficient in building scalable web applications using Next.js for frontend and Spring Boot for backend. Experienced in designing robust APIs with GraphQL and integrating modern technologies across the stack.",
-      techUsed: [
-        { icon: FaJava, name: "Java" },
-        { icon: SiSpringboot, name: "Spring Boot" },
-        { icon: SiGraphql, name: "GraphQL" },
-        { icon: MdApi, name: "REST APIs" },
-        { icon: SiPostgresql, name: "PostgreSQL" },
-        { icon: SiTypescript, name: "TypeScript" },
-        { icon: SiNextdotjs, name: "Next.js" },
-        { icon: SiDocker, name: "Docker" },
-        { icon: FaCloud, name: "Cloud" },
-      ],
-      imageUrl: "finalSaumya.png",
-    },
-    {
-      name: "Vishwas",
-      email: "kaixoxerl@gmail.com",
-      linkdin: "https://www.linkedin.com/in/vishwas-pahwa-694928328/",
-      github: "https://github.com/ScorchedPearl",
-      about:
-        "Full Stack Developer skilled in TypeScript with experience building various projects such as PostPearl. Adept in both frontend and backend development, and highly proficient in DevOps practices including Docker, CI/CD, and cloud deployment.",
+        "Full Stack Developer skilled in TypeScript with experience building various projects such as V-Code. Adept in both frontend and backend development, and highly proficient in DevOps practices including Docker, CI/CD, and cloud deployment.",
       techUsed: [
         { icon: SiTypescript, name: "TypeScript" },
         { icon: SiNextdotjs, name: "Next.js" },
@@ -114,7 +92,7 @@ export default function Creator() {
   };
 
   return (
-    <section  className="py-32 bg-gradient-to-b from-gray-50 to-white select-none">
+    <section  className="py-32 bg-gradient-to-b from-black to-black select-none">
       <div className=" mx-auto  text-center">
         <div className="bg-black rounded-3xl py-12 md:py-16 relative overflow-hidden">
   
@@ -127,7 +105,7 @@ export default function Creator() {
           <div className="flex flex-col md:flex-row justify-between w-full py-4">
             <div className="text-white pt-2 md:pt-5">
               <div className="text-3xl sm:text-5xl font-bold py-2 sm:py-4">
-                MarcelPearl Creators
+                V Graph Creator
               </div>
               <div className="text-gray-300 text-sm sm:text-base">
                 Our skills made this project come to live
@@ -166,7 +144,7 @@ export default function Creator() {
                   src={`/${creator[index].imageUrl}`}
                   width={500}
                   height={500}
-                  className="w-3/4 md:w-full h-auto ml-5"
+                  className="w-3/4 md:w-full h-auto ml-5 rounded-2xl"
                   alt="Creator"
                 />
               </div>

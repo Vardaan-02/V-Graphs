@@ -169,7 +169,7 @@ export default function Hero() {
                 </div>
                 <div className="flex gap-4">
                   <a
-                    href="https://instagram.com/marcelpearl"
+                    href="https://instagram.com/V Graph"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-black border border-zinc-700 rounded-lg hover:border-cyan-400 transition-colors group"
@@ -180,7 +180,7 @@ export default function Hero() {
                   </a>
 
                   <a
-                    href="https://linkedin.com/in/marcelpearl"
+                    href="https://linkedin.com/in/V Graph"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-black border border-zinc-700 rounded-lg hover:border-cyan-400 transition-colors group"
@@ -191,7 +191,7 @@ export default function Hero() {
                   </a>
 
                   <a
-                    href="https://github.com/marcelpearl"
+                    href="https://github.com/V Graph"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 bg-black border border-zinc-700 rounded-lg hover:border-cyan-400 transition-colors group"
