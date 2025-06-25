@@ -22,7 +22,7 @@ public class GoogleCalendarConfig {
                 .setAccessToken(accessToken);
 
         return new Calendar.Builder(httpTransport, jsonFactory, credential)
-                .setApplicationName("MarcelPearl")
+                .setApplicationName("V Graph")
                 .build();
     }
 }

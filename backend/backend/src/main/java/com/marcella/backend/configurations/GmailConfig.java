@@ -21,7 +21,7 @@ public class GmailConfig {
                 .setAccessToken(accessToken);
 
         return new Gmail.Builder(httpTransport, jsonFactory, credential)
-                .setApplicationName("MarcelPearl")
+                .setApplicationName("V Graph")
                 .build();
     }
 }
