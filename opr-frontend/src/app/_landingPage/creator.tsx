@@ -22,10 +22,30 @@ export default function Creator() {
 
   const creator = [
     {
-      name: "Vardaan",
-      email: "vardaanpahwa02@gmail.com",
-      linkdin: "https://www.linkedin.com/in/vardaan-pahwa-6936a3319/",
-      github: "https://github.com/Vardaan-02",
+      name: "Saumya",
+      email: "saumyasood27@gmail.com",
+      linkdin: "https://www.linkedin.com/in/saumya-sood-875837332/",
+      github: "https://github.com/Marcella2706",
+      about:
+        "Full Stack Developer with expertise in both TypeScript and Java. Proficient in building scalable web applications using Next.js for frontend and Spring Boot for backend. Experienced in designing robust APIs with GraphQL and integrating modern technologies across the stack.",
+      techUsed: [
+        { icon: FaJava, name: "Java" },
+        { icon: SiSpringboot, name: "Spring Boot" },
+        { icon: SiGraphql, name: "GraphQL" },
+        { icon: MdApi, name: "REST APIs" },
+        { icon: SiPostgresql, name: "PostgreSQL" },
+        { icon: SiTypescript, name: "TypeScript" },
+        { icon: SiNextdotjs, name: "Next.js" },
+        { icon: SiDocker, name: "Docker" },
+        { icon: FaCloud, name: "Cloud" },
+      ],
+      imageUrl: "finalSaumya.png",
+    },
+    {
+      name: "Vishwas",
+      email: "kaixoxerl@gmail.com",
+      linkdin: "https://www.linkedin.com/in/vishwas-pahwa-694928328/",
+      github: "https://github.com/ScorchedPearl",
       about:
         "Full Stack Developer skilled in TypeScript with experience building various projects such as PostPearl. Adept in both frontend and backend development, and highly proficient in DevOps practices including Docker, CI/CD, and cloud deployment.",
       techUsed: [
