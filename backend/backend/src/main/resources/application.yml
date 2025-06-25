@@ -1,0 +1,94 @@
+spring:
+  profiles:
+    active: docker
+
+  datasource:
+    url: jdbc:postgresql://aws-0-ap-south-1.pooler.supabase.com:5432/postgres
+    username: postgres.ufwkdfwrrqurdgybwvse
+    password: MarcelPearl0627
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 5
+      minimum-idle: 1
+      idle-timeout: 10000
+      max-lifetime: 30000
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+  data:
+    redis:
+      url: redis://localhost:6379
+      timeout: 5000ms
+      lettuce:
+        pool:
+          max-active: 20
+          max-idle: 10
+          min-idle: 2
+          max-wait: 2000ms
+        shutdown-timeout: 100ms
+      client-type: lettuce
+
+  kafka:
+    bootstrap-servers: localhost:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      acks: 1
+      retries: 3
+      batch-size: 16384
+      linger-ms: 5
+      buffer-memory: 33554432
+      properties:
+        spring.json.add.type.headers: false
+        max.request.size: 1048576
+
+
+    consumer:
+      group-id: workflow-coordinator
+      auto-offset-reset: earliest
+      key-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      enable-auto-commit: true
+      auto-commit-interval-ms: 5000
+      session-timeout-ms: 30000
+      heartbeat-interval-ms: 3000
+      max-poll-records: 500
+      max-poll-interval-ms: 300000
+      properties:
+        spring.json.trusted.packages: '*'
+        spring.json.use.type.headers: false
+        spring.deserializer.key.delegate.class: org.apache.kafka.common.serialization.StringDeserializer
+        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
+
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+    deserialization:
+      fail-on-unknown-properties: false
+
+jwt:
+  secret: my-super-secret-jwt-key-1234567890
+  expiration: 604800000
+
+server:
+  port: 2706
+
+logging:
+  level:
+    com.marcella.backend: INFO
+    org.springframework.kafka: WARN
+    org.apache.kafka: WARN
+    redis: WARN
+
+sendgrid:
+  api-key: ${API_KEY}
+  from-email: marcellapearl0627@gmail.com
